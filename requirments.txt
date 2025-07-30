@@ -1,0 +1,10 @@
+streamlit
+faiss
+numpy
+pandas
+sklearn
+matlib
+seaborn
+plotly
+#local packages
+-e . 
