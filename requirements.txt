@@ -1,5 +1,5 @@
 streamlit
-faiss-cpu==1.7.4
+faiss
 numpy
 pandas
 scikit-learn
