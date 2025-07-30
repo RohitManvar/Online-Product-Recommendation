@@ -1,9 +1,8 @@
-python==3.13.3
 streamlit
-faiss
+faiss-cpu==1.7.4
 numpy
 pandas
-sklearn
-matlib
+scikit-learn
+matplotlib
 seaborn
 plotly
