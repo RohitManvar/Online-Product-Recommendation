@@ -6,5 +6,3 @@ sklearn
 matlib
 seaborn
 plotly
-#local packages
--e . 
