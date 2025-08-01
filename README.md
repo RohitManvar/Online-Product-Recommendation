@@ -17,3 +17,16 @@ This project demonstrates how machine learning can personalize user experiences 
 - 🔍 Product recommendations based on user selection
 - 🎯 Content-based filtering using product similarity
 - 📊 Clean, responsive UI with Streamlit
+
+---
+
+## 📸 Screenshots
+
+### 🔮 Product Recommendation Interface
+![Product Recommendation](screenshots/recommendation_ui.png)
+
+### 👥 Customer Analysis Dashboard
+![Customer Analysis](screenshots/customer_analysis.png)
+
+### 📈 Sales Analysis Dashboard
+![Sales Analysis](screenshots/sales_analysis.png)
