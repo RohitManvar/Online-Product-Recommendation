@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: product-recommendation-api
+    env: python
+    plan: free
+    region: oregon
+    pythonVersion: "3.11"
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: FRONTEND_URL
+        sync: false
