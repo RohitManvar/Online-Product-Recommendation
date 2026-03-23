@@ -164,7 +164,7 @@ export default function AnalyticsPage() {
   const kpi         = useQuery({ queryKey: ["kpi"],           queryFn: getKpiMetrics });
   const topProducts = useQuery({ queryKey: ["topProducts"],   queryFn: () => getTopProducts() });
   const customers   = useQuery({ queryKey: ["customerStats"], queryFn: getCustomerStats });
-  const products    = useQuery({ queryKey: ["products"],      queryFn: getProducts });
+  const products    = useQuery({ queryKey: ["products"],      queryFn: () => getProducts() });
 
   const geoSales = useQuery({
     queryKey: ["geoSales", geoProduct],
