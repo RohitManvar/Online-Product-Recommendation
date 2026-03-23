@@ -38,7 +38,7 @@ if _frontend_url:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins,
-    allow_origin_regex=r"https://.*\.vercel\.app",  # covers all preview deployments
+    allow_origin_regex=r"https://(.*\.vercel\.app|.*\.onrender\.com)",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
