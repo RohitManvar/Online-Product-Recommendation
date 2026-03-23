@@ -5,9 +5,10 @@ services:
     env: python
     plan: free
     region: oregon
+    rootDir: backend
     pythonVersion: "3.11"
-    buildCommand: pip install -r backend/requirements.txt
-    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: FRONTEND_URL
         sync: false   # Set after frontend deploys, e.g. https://product-recommendation-frontend.onrender.com
@@ -18,8 +19,9 @@ services:
     env: node
     plan: free
     region: oregon
-    buildCommand: cd frontend && npm install && npm run build
-    startCommand: cd frontend && npm start -- -p $PORT
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start -- -p $PORT
     envVars:
       - key: BACKEND_URL
         sync: false   # Set to https://product-recommendation-api.onrender.com
